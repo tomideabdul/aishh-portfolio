@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <title>AISH</title>
-<meta name="description" content="Portfolio of Aishat Adebola Adeniyi: research, communications and community work.">
+<meta name="description" content="Portfolio of Aisha A Adebola: research, communications and community work.">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================================
@@ -150,7 +150,7 @@ html.editing h1.name{user-select:text}
 .hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(24px,5vw,72px);margin-top:clamp(32px,6vw,72px);align-items:end}
 .role-line{font:600 clamp(1.4rem,3vw,2.2rem)/1.15 var(--display);letter-spacing:-.02em;font-variation-settings:"wdth" 90;margin-bottom:18px}
 .role-line .swap{
-  display:inline-block;background:var(--hi);color:var(--hi-fg);padding:0 .3em;margin-inline:.1em;
+  display:inline-block;max-width:100%;background:var(--hi);color:var(--hi-fg);padding:0 .3em;margin-inline:.1em;
   animation:swapin .5s cubic-bezier(.2,.8,.2,1);
 }
 @keyframes swapin{from{transform:translateY(40%);opacity:0}to{transform:none;opacity:1}}
@@ -186,7 +186,7 @@ html.editing h1.name{user-select:text}
 html.editing .portrait{cursor:pointer;outline:1.5px dashed var(--accent);outline-offset:4px}
 .about-copy p+p{margin-top:1.1em}
 .about-copy .lede{margin-bottom:1.2em}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(40px,6vw,72px);border-top:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:clamp(40px,6vw,72px);border-top:1px solid var(--line)}
 .stat{padding:24px 20px 8px 0}
 .stat+.stat{padding-left:20px;border-left:1px solid var(--line)}
 .stat .num{font:700 clamp(2.2rem,5vw,3.6rem)/1 var(--display);letter-spacing:-.04em;font-variant-numeric:tabular-nums;color:var(--accent)}
@@ -195,7 +195,8 @@ html.editing .portrait{cursor:pointer;outline:1.5px dashed var(--accent);outline
   .about-grid{grid-template-columns:1fr}
   .portrait{max-width:340px}
   .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .stat:nth-child(3){padding-left:0;border-left:0}
+  .stat:nth-child(3),.stat:nth-child(5){padding-left:0;border-left:0}
+  .stat:nth-child(5){grid-column:1/-1}
   .stat:nth-child(n+3){border-top:1px solid var(--line);margin-top:16px;padding-top:24px}
 }
 
@@ -321,7 +322,7 @@ dialog::backdrop{background:rgba(6,9,22,.66);backdrop-filter:blur(3px)}
 .t-btn[aria-selected="true"] span{color:inherit;opacity:.8}
 .t-quote{align-self:center}
 .t-quote[hidden]{display:none}
-.t-quote blockquote{margin:0;font:600 clamp(1.4rem,3vw,2.3rem)/1.22 var(--display);letter-spacing:-.02em;text-wrap:pretty;font-variation-settings:"wdth" 92;animation:swapin .45s cubic-bezier(.2,.8,.2,1)}
+.t-quote blockquote{margin:0;font:600 clamp(1.2rem,2.4vw,1.85rem)/1.3 var(--display);letter-spacing:-.02em;text-wrap:pretty;font-variation-settings:"wdth" 92;animation:swapin .45s cubic-bezier(.2,.8,.2,1)}
 .t-quote blockquote::before{content:"\201C";color:var(--accent);margin-right:.05em}
 @media (max-width:860px){.t-grid{grid-template-columns:1fr}.t-people{flex-direction:row;flex-wrap:wrap}.t-btn{flex:1 1 160px}}
 
@@ -380,7 +381,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
 
 <header class="nav">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="Back to top"><b data-edit="logo-initial">A</b><span data-edit="logo-name">Aishat Adebola Adeniyi</span></a>
+    <a class="logo" href="#top" aria-label="Back to top"><b data-edit="logo-initial">A</b><span data-edit="logo-name">Aisha A Adebola</span></a>
     <ul id="navList">
       <li><a href="#about">About</a></li>
       <li><a href="#work">Work</a></li>
@@ -411,12 +412,12 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
     </div>
 
     <!-- EDIT: your name. Move the cursor over it. -->
-    <h1 class="name" id="name" data-edit="name" aria-label="Aishat Adebola Adeniyi">Aishat Adebola Adeniyi</h1>
+    <h1 class="name" id="name" data-edit="name" aria-label="Aisha A Adebola">Aisha A Adebola</h1>
     <p class="hero-hint">Move your pointer over the name</p>
 
     <div class="hero-grid">
       <div>
-        <p class="role-line">I work as <span class="swap" id="swap">a researcher</span></p>
+        <p class="role-line">I work as a <span class="swap" id="swap">Content Writer</span></p>
         <p class="lede" data-edit="hero-intro">I turn complex information into clear stories, sound processes and work that people trust. This is a short line about what you do and who you do it for.</p>
         <div class="cta-row">
           <a class="btn solid" href="#work">See my work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
@@ -436,24 +437,24 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
       <div>
         <div class="portrait rv" id="portrait" title="Edit mode: click to add your photo">
           <span class="initials" id="initials">A</span>
-          <img id="photo" alt="Portrait of Aishat Adebola Adeniyi" hidden>
+          <img id="photo" alt="Portrait of Aisha A Adebola" hidden>
           <span class="cap" data-edit="portrait-cap">Based in Nigeria</span>
         </div>
         <input type="file" id="photoInput" accept="image/*" class="sr" tabindex="-1" aria-label="Upload portrait">
       </div>
       <div class="about-copy rv">
         <h2 class="h2" style="margin-bottom:28px" data-edit="about-title">What I do, in plain words.</h2>
-        <p class="lede" data-edit="about-lede">Write two or three sentences that sum up your work: the problems you take on and the people you serve.</p>
-        <p data-edit="about-p1">Use this paragraph for your background. Mention your training, the sectors you have worked in and the methods you rely on. Keep it specific. Names of organisations, places and projects make it believable.</p>
-        <p data-edit="about-p2">Use this one for what drives you. A guiding principle, a cause, or the kind of work you want more of. Visitors remember this part.</p>
+        <p class="lede" data-edit="about-lede">I am a marketing and communications professional with experience in digital communications, content strategy, storytelling, and community management across industries including finance, FMCG, beauty, and lifestyle.</p>
+        <p data-edit="about-p1">My work spans developing content and digital campaigns, managing brand communications across digital platforms, and increasing audience growth and engagement. I have worked on campaigns for brands including Leadway, Lush Hair, Indomie, Coca-Cola Nigeria, Malta Guinness, Cowbell Coffee, and Meristem.</p>
       </div>
     </div>
 
     <div class="stats rv" aria-label="Highlights">
-      <div class="stat"><div class="num" data-count="6" data-suffix="+">6+</div><p data-edit="s1">Years across research and communications</p></div>
-      <div class="stat"><div class="num" data-count="40" data-suffix="+">40+</div><p data-edit="s2">Stakeholder briefings delivered</p></div>
-      <div class="stat"><div class="num" data-count="12" data-suffix="K">12K</div><p data-edit="s3">People reached by published work</p></div>
-      <div class="stat"><div class="num" data-count="5">5</div><p data-edit="s4">Community programmes led</p></div>
+      <div class="stat"><div class="num" data-count="4" data-suffix="+">4+</div><p data-edit="s1">Years of experience</p></div>
+      <div class="stat"><div class="num" data-count="10" data-suffix="+">10+</div><p data-edit="s2">Brands</p></div>
+      <div class="stat"><div class="num" data-count="20" data-suffix="+">20+</div><p data-edit="s3">Campaigns</p></div>
+      <div class="stat"><div class="num" data-count="2" data-suffix="M">2M</div><p data-edit="s4">People reached by published work</p></div>
+      <div class="stat"><div class="num" data-count="3">3</div><p data-edit="s5">Communities of over 100 members</p></div>
     </div>
   </div>
 </section>
@@ -463,7 +464,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
   <div class="wrap"><p class="marq-note" data-edit="marq-note">Worked with and for</p></div>
   <div class="marq-track" id="marqTrack">
     <!-- EDIT: replace these names. The list repeats itself automatically. -->
-    <span>Organisation One</span><span>University of Abuja</span><span>Community Network</span><span>Media House</span><span>Think Tank</span><span>Foundation</span>
+    <span>Lush Hair</span><span>LushNova</span><span>Meristem Nigeria</span><span>Leadway</span><span>Coca Cola</span><span>Indomie</span><span>Cowbell Coffee</span><span>Malta Guinness</span>
   </div>
 </div>
 
@@ -585,14 +586,10 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
     <h2 class="h2" data-edit="t-title">What people say after working with me.</h2>
     <div class="t-grid">
       <div class="t-people" role="tablist" aria-label="Testimonials">
-        <button class="t-btn" role="tab" aria-selected="true" aria-controls="tq-0" id="tb-0"><strong data-edit="tn0">First Person</strong><span data-edit="tr0">Director, Organisation</span></button>
-        <button class="t-btn" role="tab" aria-selected="false" aria-controls="tq-1" id="tb-1" tabindex="-1"><strong data-edit="tn1">Second Person</strong><span data-edit="tr1">Programme Lead, Partner</span></button>
-        <button class="t-btn" role="tab" aria-selected="false" aria-controls="tq-2" id="tb-2" tabindex="-1"><strong data-edit="tn2">Third Person</strong><span data-edit="tr2">Lecturer, University</span></button>
+        <button class="t-btn" role="tab" aria-selected="true" aria-controls="tq-0" id="tb-0"><strong data-edit="tn0">Aisha Kekere-Ekun</strong><span data-edit="tr0">Co-founder, Tech Tribe</span></button>
       </div>
       <div>
-        <div class="t-quote" role="tabpanel" id="tq-0" aria-labelledby="tb-0"><blockquote data-edit="tq0">Paste a real sentence or two from a colleague, client or supervisor. Specific praise is more convincing than general praise.</blockquote></div>
-        <div class="t-quote" role="tabpanel" id="tq-1" aria-labelledby="tb-1" hidden><blockquote data-edit="tq1">A second quote goes here. Ask for permission before you publish someone's words.</blockquote></div>
-        <div class="t-quote" role="tabpanel" id="tq-2" aria-labelledby="tb-2" hidden><blockquote data-edit="tq2">A third quote goes here. Mention what changed because of your work.</blockquote></div>
+        <div class="t-quote" role="tabpanel" id="tq-0" aria-labelledby="tb-0"><blockquote data-edit="tq0">I had the pleasure of working with Aisha, and she is an outstanding Social Media Manager and Content Writer. She creates engaging content, understands her audience, and brings fresh, creative ideas to every project. She's reliable, strategic, and a great team player. I highly recommend her.</blockquote></div>
       </div>
     </div>
   </div>
@@ -621,7 +618,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
 
 <footer>
   <div class="wrap">
-    <span>&copy; <span id="year">2026</span> <span data-edit="foot-name">Aishat Adebola Adeniyi</span></span>
+    <span>&copy; <span id="year">2026</span> <span data-edit="foot-name">Aisha A Adebola</span></span>
     <a href="#top">Back to top &uarr;</a>
   </div>
 </footer>
@@ -721,7 +718,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
   $('#year').textContent=new Date().getFullYear();
 
   /* ---------- hero name: variable font follows the pointer ---------- */
-  var nameEl=$('#name'),plainName=nameEl.textContent.trim()||'Aishat Adebola Adeniyi',letters=[];
+  var nameEl=$('#name'),plainName=nameEl.textContent.trim()||'Aisha A Adebola',letters=[];
   function splitName(){
     nameEl.textContent='';letters=[];
     plainName.split(/\s+/).forEach(function(word){
@@ -766,7 +763,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
   else letters.forEach(function(L){L.el.style.fontVariationSettings='"wght" 700,"wdth" 92'});
 
   /* ---------- rotating role word (EDIT the list) ---------- */
-  var roles=['a researcher','a storyteller','a communicator','an ad specialist','an analyst'];
+  var roles=['Content Writer','Storyteller','Digital Marketer','Digital Strategist','Brand Communications Specialist','Community Manager'];
   var swap=$('#swap'),ri=0;
   if(!reduce){
     setInterval(function(){
@@ -908,7 +905,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
       nameEl.textContent=plainName;
       toast('Edit mode on. Click any dashed text to change it.');
     }else{
-      plainName=nameEl.textContent.trim()||'Aishat Adebola Adeniyi';
+      plainName=nameEl.textContent.trim()||'Aisha A Adebola';
       edits.name=plainName;persist();
       splitName();
       syncMail();

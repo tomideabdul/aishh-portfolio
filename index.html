@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <title>AISH</title>
-<meta name="description" content="Portfolio of Your Name: research, communications and community work.">
+<meta name="description" content="Portfolio of Aishat Adebola Adeniyi: research, communications and community work.">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================================
@@ -86,7 +86,10 @@ header.nav{
 }
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
 .logo{font:700 1.15rem/1 var(--display);text-decoration:none;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
-.logo b{display:inline-grid;place-items:center;width:30px;height:30px;background:var(--fg);color:var(--bg);font-size:.95rem;border-radius:50%}
+.logo{min-width:0}
+.logo span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+@media (max-width:480px){.logo{font-size:1rem}}
+.logo b{flex:none;display:inline-grid;place-items:center;width:30px;height:30px;background:var(--fg);color:var(--bg);font-size:.95rem;border-radius:50%}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:28px}
 .nav ul a{text-decoration:none;font-size:.95rem;color:var(--muted);transition:color .2s;position:relative;padding-block:6px}
 .nav ul a:hover,.nav ul a.on{color:var(--fg)}
@@ -377,7 +380,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
 
 <header class="nav">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="Back to top"><b data-edit="logo-initial">Y</b><span data-edit="logo-name">Your Name</span></a>
+    <a class="logo" href="#top" aria-label="Back to top"><b data-edit="logo-initial">A</b><span data-edit="logo-name">Aishat Adebola Adeniyi</span></a>
     <ul id="navList">
       <li><a href="#about">About</a></li>
       <li><a href="#work">Work</a></li>
@@ -408,7 +411,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
     </div>
 
     <!-- EDIT: your name. Move the cursor over it. -->
-    <h1 class="name" id="name" data-edit="name" aria-label="Your Name">Your Name</h1>
+    <h1 class="name" id="name" data-edit="name" aria-label="Aishat Adebola Adeniyi">Aishat Adebola Adeniyi</h1>
     <p class="hero-hint">Move your pointer over the name</p>
 
     <div class="hero-grid">
@@ -432,8 +435,8 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
     <div class="about-grid">
       <div>
         <div class="portrait rv" id="portrait" title="Edit mode: click to add your photo">
-          <span class="initials" id="initials">Y</span>
-          <img id="photo" alt="Portrait of Your Name" hidden>
+          <span class="initials" id="initials">A</span>
+          <img id="photo" alt="Portrait of Aishat Adebola Adeniyi" hidden>
           <span class="cap" data-edit="portrait-cap">Based in Nigeria</span>
         </div>
         <input type="file" id="photoInput" accept="image/*" class="sr" tabindex="-1" aria-label="Upload portrait">
@@ -600,10 +603,10 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
   <div class="wrap">
     <div class="label">Contact</div>
     <h2 class="h2" data-edit="contact-title">Let's work on something.</h2>
-    <a class="mail" id="mail" href="mailto:hello@yourname.com" data-edit="email">hello@yourname.com</a>
+    <a class="mail" id="mail" href="mailto:adebolaadeniyi39@gmail.com" data-edit="email">adebolaadeniyi39@gmail.com</a>
     <div class="contact-row">
       <button class="btn solid" id="copyMail">Copy email</button>
-      <a class="btn ghost" id="mailLink" href="mailto:hello@yourname.com">Open in mail app</a>
+      <a class="btn ghost" id="mailLink" href="mailto:adebolaadeniyi39@gmail.com">Open in mail app</a>
       <span class="copied" id="copied" role="status"></span>
     </div>
     <!-- EDIT: set the href of each link -->
@@ -618,7 +621,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
 
 <footer>
   <div class="wrap">
-    <span>&copy; <span id="year">2026</span> <span data-edit="foot-name">Your Name</span></span>
+    <span>&copy; <span id="year">2026</span> <span data-edit="foot-name">Aishat Adebola Adeniyi</span></span>
     <a href="#top">Back to top &uarr;</a>
   </div>
 </footer>
@@ -718,7 +721,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
   $('#year').textContent=new Date().getFullYear();
 
   /* ---------- hero name: variable font follows the pointer ---------- */
-  var nameEl=$('#name'),plainName=nameEl.textContent.trim()||'Your Name',letters=[];
+  var nameEl=$('#name'),plainName=nameEl.textContent.trim()||'Aishat Adebola Adeniyi',letters=[];
   function splitName(){
     nameEl.textContent='';letters=[];
     plainName.split(/\s+/).forEach(function(word){
@@ -905,7 +908,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
       nameEl.textContent=plainName;
       toast('Edit mode on. Click any dashed text to change it.');
     }else{
-      plainName=nameEl.textContent.trim()||'Your Name';
+      plainName=nameEl.textContent.trim()||'Aishat Adebola Adeniyi';
       edits.name=plainName;persist();
       splitName();
       syncMail();

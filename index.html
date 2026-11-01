@@ -865,7 +865,7 @@ html.editing [data-edit]:focus{outline-style:solid;background:color-mix(in srgb,
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var $=function(s,c){return (c||document).querySelector(s)};
   var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
-  var KEY='portfolio-edits-v1',PHOTO='portfolio-photo-v1',THEME='portfolio-theme-v1';
+  var KEY='portfolio-edits-v2',PHOTO='portfolio-photo-v1',THEME='portfolio-theme-v1';
   var baked=root.hasAttribute('data-baked');
 
   function load(k){try{return localStorage.getItem(k)}catch(e){return null}}
